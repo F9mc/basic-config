@@ -9,6 +9,7 @@ export PS1="\u \[\e[01;32m\]\w \[\e[01;94m\]\$(parse_git_branch)\[\e[01;00m\]$ "
 
 # Pour Mac
 export PATH="/opt/homebrew/bin:$PATH"
+export BASH_SILENCE_DEPRECATION_WARNING=1
 
 #color for man pages
 export LESS_TERMCAP_mb=$'\E[01;31m'
