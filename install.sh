@@ -2,8 +2,6 @@
 
 ## Install Packages
 # Debian
-sudo apt update -y 
-sudo apt upgrade -y
 sudo apt install bash exa curl git -y
 
 ## Git clone
