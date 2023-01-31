@@ -10,3 +10,7 @@ jobs:
         run: curl https://raw.githubusercontent.com/Efrei-Paul/basic-config/main/install.sh -o script.sh
       - name: execute script
         run: bash script.sh -a -d
+      - name: test ls
+        run: ls -al
+      - name: test docker
+        run: docker --help
