@@ -13,10 +13,10 @@ while getops 'l:' OPTION; do
     case "$OPTION" in
         a)
         echo `\nInstalling Workstation packages\n`
-        bash ./install-workstation.sh
+        bash ./lib/install-workstation.sh
         ;;
     esac
 done
 ## Set Up
-cp ./bashrc ~/.bashrc
-sudo cp ./bashrc ~/.bashrc
+cp ./dotfiles/bashrc ~/.bashrc
+sudo cp ./dotfiles/bashrc ~/.bashrc
