@@ -1,0 +1,12 @@
+name: Tests
+
+on: [push]
+
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: download scrpt
+        run: curl https://raw.githubusercontent.com/Efrei-Paul/basic-config/main/install.sh -o script.sh
+      - name: execute script
+        run: bash script.sh
