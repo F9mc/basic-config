@@ -5,3 +5,4 @@
 ### Packages
 - bash
 - exa
+- python3

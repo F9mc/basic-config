@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: download scrpt
-        run: curl https://raw.githubusercontent.com/Efrei-Paul/basic-config/main/install.sh -o script.sh
+        run: curl https://raw.githubusercontent.com/F9mc/basic-config/main/install.sh -o script.sh
       - name: execute script
         run: bash script.sh -a -d
       - name: test ls

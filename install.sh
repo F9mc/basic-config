@@ -6,7 +6,7 @@ sudo apt install bash exa curl git python3 -y &> /dev/null
 
 ## Git clone
 cd /tmp
-git clone https://github.com/Efrei-Paul/basic-config.git 
+git clone https://github.com/F9mc/basic-config.git 
 cd /tmp/basic-config
 
 while getops 'ad:' OPTION; do
