@@ -11,6 +11,8 @@ jobs:
       - name: execute script
         run: bash script.sh -a -d
       - name: test ls
-        run: ls -al
+        run: exa
       - name: test docker
         run: docker --help
+      - name: test bashrc
+        run: cat ~/.bashrc
