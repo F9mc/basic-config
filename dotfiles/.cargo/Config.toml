@@ -1,4 +1,6 @@
-paths = ["/path/to/override"] #TODO
+[cargo-new]
+name = "F9mc"
+vcs = "git"
 
 [alias]     
 b = "build"
@@ -13,15 +15,10 @@ ins = "install --force --path ."
 [build]
 jobs = 1                      
 rustc = "rustc"               
-rustc-wrapper = "…"           
-rustc-workspace-wrapper = "…" 
 rustdoc = "rustdoc"           
 target = "triple"             
-target-dir = "target"         
-rustflags = ["…", "…"]  #TODO      
-rustdocflags = ["…", "…"]     
-incremental = true            
-dep-info-basedir = "…"        
+target-dir = "target"            
+incremental = true                   
 
 [doc]
 browser = "chromium"                               
@@ -30,18 +27,12 @@ browser = "chromium"
 RUST_LOG = "info"
 
 [future-incompat-report]
-frequency = 'always' 
-
-[cargo-new]
-vcs = "none"                       
+frequency = 'always'                      
 
 [install]
 root = "/some/path"    #TODO     
 
-
 [term]
 quiet = false          
 verbose = false        
-color = 'auto'         
-progress.when = 'auto' 
-progress.width = 80    
+color = 'auto' 
