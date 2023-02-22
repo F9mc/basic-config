@@ -1,0 +1,47 @@
+paths = ["/path/to/override"] #TODO
+
+[alias]     
+b = "build"
+c = "check"
+t = "test"
+r = "run"
+rr = "run --release"
+recursive_example = "rr --example recursions"
+space_example = ["run", "--release", "--", "\"command list\""]
+ins = "install --force --path ."
+
+[build]
+jobs = 1                      
+rustc = "rustc"               
+rustc-wrapper = "…"           
+rustc-workspace-wrapper = "…" 
+rustdoc = "rustdoc"           
+target = "triple"             
+target-dir = "target"         
+rustflags = ["…", "…"]  #TODO      
+rustdocflags = ["…", "…"]     
+incremental = true            
+dep-info-basedir = "…"        
+
+[doc]
+browser = "chromium"                               
+
+[env]
+RUST_LOG = "info"
+
+[future-incompat-report]
+frequency = 'always' 
+
+[cargo-new]
+vcs = "none"                       
+
+[install]
+root = "/some/path"    #TODO     
+
+
+[term]
+quiet = false          
+verbose = false        
+color = 'auto'         
+progress.when = 'auto' 
+progress.width = 80    
